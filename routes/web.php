@@ -22,7 +22,7 @@ use Inertia\Inertia;
 //     return Inertia::render('Hello', []);
 // });
 
-Route::inertia('/', 'Hello');
+Route::inertia('/', 'Dashboard');
 
 // Route::inertia('/users', [UserController::class, 'index']);
 // Route::inertia('/branches', [BranchController::class, 'index']);

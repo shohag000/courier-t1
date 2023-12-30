@@ -2,6 +2,8 @@
 import { ref, onBeforeMount, watch } from 'vue';
 import { useLayout } from '../Layout/composables/layout';
 
+import { router } from '@inertiajs/vue3';
+
 
 const { layoutConfig, layoutState, setActiveMenuItem, onMenuToggle } = useLayout();
 
@@ -63,8 +65,7 @@ const itemClick = (event, item) => {
 };
 
 const checkActiveRoute = (item) => {
-    // TODO
-    return true;
+    return router.page.url === item.to;
 };
 </script>
 
